@@ -17,3 +17,9 @@
 .header a:hover {
   color: orange;
 }
+
+@media (max-width: 750px) {
+  .header a {
+    display: none;
+  }
+}
