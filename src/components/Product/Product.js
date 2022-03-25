@@ -12,8 +12,8 @@ const Product = (props) => {
       <div className="product-detail">
         <h3>{name}</h3>
         <h5>Price: ${price}</h5>
-        <span>Manufacturer: {sellers}</span>
-        <span>Ratting: {rattings}</span>
+        <p>Manufacturer: {sellers}</p>
+        <p>Ratting: {rattings}</p>
       </div>
       <button className="btn-cart">
         Add To Cart{" "}

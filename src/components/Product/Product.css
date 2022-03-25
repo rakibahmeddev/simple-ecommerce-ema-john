@@ -25,6 +25,7 @@
 
 .product-detail {
   margin: 8px 15px;
+  padding-bottom: 30px;
 }
 button {
   display: flex;

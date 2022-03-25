@@ -6,9 +6,44 @@
 .products-container {
   margin-left: 80px;
 }
+.product-container img {
+  width: 100%;
+  margin: auto;
+}
 
 .product-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+@media (max-width: 1042px) {
+  .shop-container {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    margin: auto;
+  }
+  .product-container img {
+    width: 100%;
+  }
+
+  .products-container {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 680px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    margin: auto;
+  }
 }
