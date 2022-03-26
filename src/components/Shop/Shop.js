@@ -10,8 +10,11 @@ const Shop = () => {
       .then((data) => setProducts(data));
   }, []);
 
+  const [cart, setCart] = useState([]);
   const handleAddToCart = (product) => {
     console.log(product);
+    const newCart = [...cart, product];
+    setCart(newCart);
   };
   return (
     <div className="shop-container">
@@ -29,6 +32,7 @@ const Shop = () => {
       </div>
       <div className="cart-container">
         <h3>Order Summary</h3>
+        <p>Selected Items: {cart.length}</p>
       </div>
     </div>
   );

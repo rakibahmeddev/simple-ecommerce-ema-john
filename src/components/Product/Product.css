@@ -51,7 +51,6 @@ button {
   background-color: rgb(8, 8, 8);
   color: #fff;
 }
-.btn-cart .cart-icon {
-  width: 25px;
+.btn-cart span {
   margin: 0 5px;
 }
